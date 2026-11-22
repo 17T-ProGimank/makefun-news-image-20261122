@@ -23,8 +23,11 @@ A newspaper front page that sums up Sunday 22 November 2026 in one image —
 python3 main.py
 ```
 
-Writes `out/entry.png` (1024×1024, deterministic — two runs are
-byte-identical). Requires Python 3.13 and Pillow.
+Copies the pre-rendered `entry.png` (1024×1024, deterministic) to
+`out/entry.png`. Stdlib only — no third-party package is needed to
+run it. `draw_poster.py` is the generator that drew the poster
+offline (requires Python 3.13, Pillow and DejaVu fonts, run locally);
+its output is committed here as `entry.png`.
 
 ## Bounty
 
